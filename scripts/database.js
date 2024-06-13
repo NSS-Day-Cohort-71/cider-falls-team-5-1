@@ -31,7 +31,9 @@ const database = {
       activityId: [1, 5, 9],
     },
   ],
+
   Activities: [
+
     {
       id: 1,
       name: "hiking",
