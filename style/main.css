@@ -1,0 +1,67 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #47936F;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.details__parks, .details__guests {
+    background-color: #2C8574;
+    border: 0.1rem dashed;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details__parks:hover, .details__guests:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.area {
+    font-size: xx-large;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: left;
+}
+
+.guest {
+    font-size: xx-large;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: right;
+}

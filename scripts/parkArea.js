@@ -5,7 +5,7 @@ const parkAreas = getAreas();
 export const ParkAreasHTML = () => {
   let html = "<ul>";
   for (const parkArea of parkAreas) {
-    html += `<li>${parkArea.name}</li>`;
+    html += `<li class ="area">${parkArea.name}</li>`;
   }
   html += "</ul>";
   return html;

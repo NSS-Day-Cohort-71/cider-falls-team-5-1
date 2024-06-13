@@ -31,7 +31,7 @@ const database = {
       activityId: [1, 5, 9],
     },
   ],
-  services: [
+  activities: [
     {
       id: 1,
       name: "hiking",
@@ -160,6 +160,6 @@ export const getGuests = () => {
   return database.guests.map((guest) => ({ ...guest }));
 };
 
-export const getServices = () => {
-  return database.services.map((service) => ({ ...service }));
+export const getActivity = () => {
+  return database.activities.map((activity) => ({ ...activity }));
 };

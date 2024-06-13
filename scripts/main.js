@@ -1,23 +1,28 @@
 import { ParkAreasHTML } from "./parkArea.js";
+import { guestsHTML } from "./parkGuests.js"
+
 const mainContainer = document.querySelector("#container");
 
 const applicationHTML = `
-<h1>Brewed Awakenings</h1>
-<article class="details">
-    <section class="detail--column list details__parks">
-        <h2>Parks</h2>
-        ${ParkAreasHTML()}
-    </section>
-    <section class="detail--column list details__products">
-        <h2>Products</h2>
-       
-    </section>
-</article>
+         <div class="image-container">
+        <img src="assets/Cider Falls Logo.png" alt="Cider Falls National Park" class="image">
+    </div>
 
-<article class="orders">
-    <h2>Orders</h2>
-   
-</article>
+    <div class="details-container">
+        <article class="details__parks">
+            <h2>Parks</h2>
+            <ul class="area">
+                ${ParkAreasHTML()}
+            </ul>
+        </article>
+
+        <article class="details__guests">
+            <h2>Guests</h2>
+            <ul class="guest">
+                ${guestsHTML()}
+            </ul>
+        </article>
+    </div>
 `;
 
 mainContainer.innerHTML = applicationHTML;
