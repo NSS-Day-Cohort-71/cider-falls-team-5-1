@@ -1,3 +1,4 @@
+import { ActivitiesHTML } from "./parkActivity.js";
 import { ParkAreasHTML } from "./parkArea.js";
 const mainContainer = document.querySelector("#container");
 
@@ -9,8 +10,8 @@ const applicationHTML = `
         ${ParkAreasHTML()}
     </section>
     <section class="detail--column list details__products">
-        <h2>Products</h2>
-       
+        <h2>Activities</h2>
+       ${ActivitiesHTML()}
     </section>
 </article>
 
