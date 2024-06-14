@@ -33,7 +33,6 @@ const database = {
   ],
 
   Activities: [
-
     {
       id: 1,
       name: "hiking",
@@ -155,7 +154,8 @@ const database = {
 };
 
 export const getAreas = () => {
-  return database.areas.map((area) => ({ ...area }));
+  // return database.areas.map((area) => ({ ...area }));
+  return structuredClone(database.areas);
 };
 
 export const getGuests = () => {
