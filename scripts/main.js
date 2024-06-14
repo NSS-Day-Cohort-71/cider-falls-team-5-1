@@ -27,7 +27,7 @@ const applicationHTML = `
     </div>
    <div class="details-container">
     <article class="details_activity">
-    <section class="detail--column list details__products">
+    <section class="detail--column list details__activity">
         <h2>Activities</h2>
        ${ActivitiesHTML()}
     </section>
