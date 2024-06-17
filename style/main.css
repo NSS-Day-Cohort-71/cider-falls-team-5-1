@@ -9,21 +9,19 @@
 }
 
 body {
-
-    background-color: #47936F;
-    margin: 0;
-    padding: 0;
-    box-sizing:content-box;
+  background-color: #47936f;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: content-box;
-    margin-bottom: 20px;
-
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: content-box;
+  margin-bottom: 20px;
 }
 
 .image {
@@ -32,35 +30,33 @@ body {
 }
 
 .details-container {
-
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-    gap: 10px; /* Gap between columns */
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px; /* Gap between columns */
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.details__parks, .details__activity {
-    background-color: #2C8574;
-    border: 0.1rem solid;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 10px;
-    justify-content: space-between;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+.details__parks,
+.details__activity {
+  background-color: #2c8574;
+  border: 0.1rem solid;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.details__guests{
-    background-color: #2C8574;
-    border: 0.1rem solid;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    align-content: right;
-    justify-content: space-around;
-
+.details__guests {
+  background-color: #2c8574;
+  border: 0.1rem solid;
+  padding-: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-content: right;
+  justify-content: space-around;
 }
 
 .details__parks:hover,
@@ -71,51 +67,55 @@ body {
 }
 
 .areas {
- display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-padding: 15px;
-margin: 15px;
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 15px;
+  margin: 15px;
 }
 
-.area{
-    font-size: large;
-    list-style-type: none;
-    padding: 10px;
-    margin: 10px;
-    flex-wrap: wrap;
-  
+.area {
+  font-size: large;
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
 }
-.activities{
-    font-size: large;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
+.activities {
+  font-size: large;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
-.guest{
-    font-size: large;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    text-align: right;
-}
-
-
-
-.active{
-    list-style-type: none;
+.guest {
+  font-size: large;
+  list-style-type: none;
+  padding-right: 10px;
+  margin: 0px;
+  text-align: right;
 }
 
-.activity{
-        display: flex;
-       flex-wrap: wrap;
-       flex-direction: row;
-       justify-content: space-between;
+.active {
+  list-style-type: none;
+}
+
+.activity {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .footer {
-  border: 1px solid black;
+  border: none;
   padding: 20px;
   margin: 5px;
 }
 
+.areas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* This will create three columns */
+  gap: 15px; /* This is the gap between the grid items */
+  padding: 15px;
+  margin: 15px;
+}
