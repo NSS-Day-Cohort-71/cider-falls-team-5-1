@@ -12,7 +12,7 @@ body {
     background-color: #47936F;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:content-box;
 }
 
 .image-container {
@@ -20,7 +20,7 @@ body {
     justify-content: center;
     width: 100%;
     max-width: 100%;
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin-bottom: 20px;
 }
 
@@ -32,12 +32,13 @@ body {
 .details-container {
    display: flex;
    flex-direction: row;
-    gap: 200px; /* Gap between columns */
+   flex-wrap: wrap;
+    gap: 10px; /* Gap between columns */
     width: 100%;
     box-sizing: border-box;
 }
 
-.details__parks, .details__guests, .details__activity {
+.details__parks, .details__activity {
     background-color: #2C8574;
     border: 0.1rem solid;
     padding: 10px;
@@ -46,6 +47,17 @@ body {
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.details__guests{
+    background-color: #2C8574;
+    border: 0.1rem solid;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-content: right;
+    justify-content: space-around;
+
+}
 
 .details__parks:hover, .details__guests:hover, .details__activity:hover {
     transform: scale(1.05);
@@ -53,19 +65,45 @@ body {
 }
 
 .areas {
-    display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
+ display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+padding: 15px;
+margin: 15px;
+
+
 }
 
-.area, .guest, .activities{
+.area{
     font-size: large;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
    
 }
+.activities{
+    font-size: large;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.guest{
+    font-size: large;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+}
+
 
 .active{
     list-style-type: none;
+}
+
+.activity{
+        display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: space-between;
 }
