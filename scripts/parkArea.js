@@ -1,19 +1,23 @@
-import { getAreas, getGuests } from "./database.js";
+import { getAreas, getGuests, getActivities } from "./database.js";
 
 const parkAreas = getAreas();
+const activities = getActivities();
 
 export const ParkAreasHTML = () => {
-  let html = "<ul>";
+  let html = "";
   for (const parkArea of parkAreas) {
-    html += `<li class ="area"
-                 data-type = "area" 
-                    data-id = "${parkArea.id}"> 
-                       ${parkArea.name}</li>`;
+    html += `<div class="area" data-type="area" data-id="${parkArea.id}">
+                ${parkArea.name}
+                <ul>`;
+    // Get activities for this park area
+    const areaActivities = activities.filter(activity => parkArea.activityId.includes(activity.id));
+    for (const activity of areaActivities) {
+      html += `<li class = "active" >${activity.name}</li>`;
+    }
+    html += `</ul></div>`;
   }
-  html += "</ul>";
   return html;
 };
-
 
 document.addEventListener(
   "click",
