@@ -19,13 +19,11 @@ const applicationHTML = `
 </div>
     <div class="details-container">
         <article class="details__parks">
-
+            <h2>Park Areas  </h2>
             <ul class="areas">
-
                 ${ParkAreasHTML()}
             </ul>
         </article>
-
         <article class="details__guests">
             <h2>Guests</h2>
             <ul class="guest">
