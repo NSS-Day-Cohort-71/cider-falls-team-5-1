@@ -1,6 +1,6 @@
 import { ActivitiesHTML } from "./parkActivity.js";
 import { ParkAreasHTML } from "./parkArea.js";
-import { guestsHTML } from "./parkGuests.js"
+import { guestsHTML } from "./parkGuests.js";
 
 const mainContainer = document.querySelector("#container");
 
@@ -19,7 +19,9 @@ const applicationHTML = `
 </div>
     <div class="details-container">
         <article class="details__parks">
-            <ul class = "areas">
+
+            <ul class="areas">
+
                 ${ParkAreasHTML()}
             </ul>
         </article>
