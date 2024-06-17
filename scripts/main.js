@@ -12,8 +12,7 @@ const applicationHTML = `
 
     <div class="details-container">
         <article class="details__parks">
-            <h2>Parks</h2>
-            <ul class="area">
+            <ul class "areas">
                 ${ParkAreasHTML()}
             </ul>
         </article>

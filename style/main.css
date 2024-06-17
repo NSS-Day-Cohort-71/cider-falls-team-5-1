@@ -15,30 +15,26 @@ body {
     box-sizing: border-box;
 }
 
-h2{
-text-align: center;}
-
 .image-container {
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .image {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
 }
 
 .details-container {
-    display: flex;
-    flex-direction: row;
+   display: flex;
+   flex-direction: row;
+    gap: 200px; /* Gap between columns */
     width: 100%;
-    justify-content: space-between;
     box-sizing: border-box;
-    padding: 20px;
 }
 
 .details__parks, .details__guests, .details__activity {
@@ -47,32 +43,29 @@ text-align: center;}
     padding: 10px;
     box-sizing: border-box;
     margin: 10px;
+    justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.details__parks:hover, .details__guests:hover, .details__activity:hover  {
+.details__parks:hover, .details__guests:hover, .details__activity:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-.area {
-    font-size: xx-large;
-    flex-wrap: wrap;
-    list-style-type: none;
- 
+.areas {
+    display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
 }
 
-.guest {
-    font-size: xx-large;
-    flex-wrap: wrap;
+.area, .guest, .activities{
+    font-size: large;
     list-style-type: none;
-  
+    padding: 0;
+    margin: 0;
+   
 }
-.activity {
-    font-size: xx-large;
-    flex-wrap: wrap;
+
+.active{
     list-style-type: none;
-    margin-left: 10px;
 }
